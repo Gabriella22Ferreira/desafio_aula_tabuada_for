@@ -16,7 +16,8 @@
 
         <div class="form">
             <form action="" method="get">
-                <select name="valorSelecao">
+
+                <select name="opcaoSelecionada">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -29,16 +30,19 @@
                     <option value="10">10</option>
                 </select>
         
-            <div class="btn">
-                <input type="submit" value="Enviar">
-            </div>
+                <div class="btn">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
+        </div>
 
     </div>
+
+
     <!-- PHP -->
     <?php
 
-        $valor = $_GET['valorSelecao'];
+        $valor= $_GET['opcaoSelecionada'];
 
         for($i=1;$i<=$valor;$i++)
         {
